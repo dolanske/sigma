@@ -1,7 +1,11 @@
-# Vue 3 + Vite
+# Sigma 0.0.1-alpha
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+The world's biggest chad design tool. Started with a jQuery clone, now we're here. Straigh up jumping into developing design tools.
 
-## Recommended IDE Setup
+This project aims to create a working, small scale web design tool similar to Figma, Sketch, Zeplin or Adobe XD. As usual, the main focus is to learn and try to develop this into an actual usable application.
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+---
+
+## Features
+
+- Create a rectangle lol
