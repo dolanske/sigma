@@ -1,0 +1,3 @@
+@mixin transition($len: 0.16s, $easing: "linear", $what: "all") {
+  transition: $what $len $easing;
+}

@@ -1,0 +1,41 @@
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  box-shadow: $shadow-l;
+
+  z-index: 500;
+
+  .tool {
+    all: unset; // Reset default button styling
+
+    display: block;
+    height: 56px;
+    width: 56px;
+    position: relative;
+    background-color: $color-white;
+    cursor: pointer;
+
+    &.tool__active,
+    &:hover {
+      background-color: $color-background-shade;
+    }
+
+    .tool-icon-wrap {
+      position: absolute;
+      inset: 0;
+
+      img {
+        position: absolute;
+        inset: 1em;
+
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+    }
+  }
+}

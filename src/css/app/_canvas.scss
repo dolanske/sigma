@@ -1,0 +1,12 @@
+.canvas {
+  display: block;
+  width: 10000px;
+  height: 10000px;
+  overflow: hidden;
+  position: relative;
+  background-color: $color-white-shade;
+
+  & > pre {
+    pointer-events: none;
+  }
+}

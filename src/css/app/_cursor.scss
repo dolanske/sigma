@@ -1,0 +1,38 @@
+.cursor {
+  position: absolute;
+
+  .cursor__coordinates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-accent-shade;
+    padding: 1px 4px;
+
+    strong,
+    span {
+      @include font(300);
+      display: inline;
+      font-size: 0.85rem;
+      line-height: 1.2em;
+      color: $color-text-white;
+    }
+
+    strong {
+      @include font(400);
+      display: block;
+    }
+  }
+}
+
+.cursor__action {
+  position: absolute;
+
+  // Offset initial value to prevent a tiny 2x2 square appearing in the top corner
+  left: -10px;
+  top: -10px;
+  border: 2px solid rgba($color-accent, 0.35);
+  background-color: rgba($color-accent, 0.1);
+}

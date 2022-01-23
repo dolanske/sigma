@@ -1,0 +1,19 @@
+.shape {
+  display: block;
+  position: absolute;
+
+  .shape-outline {
+    @include transition();
+    position: absolute;
+    inset: 0px;
+    pointer-events: none;
+    outline: none;
+  }
+
+  &.on-hover {
+    cursor: pointer;
+    .shape-outline {
+      outline: 2px solid $color-accent;
+    }
+  }
+}

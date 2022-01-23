@@ -1,0 +1,33 @@
+@import "./setup/";
+
+// Main Style
+
+html {
+  @include font();
+  position: relative;
+
+  body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    b,
+    strong {
+      @include font(700);
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@import "./generic/";
+
+@import "./app/";
